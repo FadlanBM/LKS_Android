@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bacground"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <ImageView
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/componen1"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:id="@+id/componen1"/>
     <ImageView
         android:layout_width="wrap_content"
@@ -28,23 +28,53 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/componen2"
         android:id="@+id/text1"
-        android:text="Get things done with TODo"
+        android:text="@string/Pembuka"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:fontFamily="@font/poppinsbold"
         android:textColor="@color/black"
-        android:textSize="18dp"/>
+        android:textSize="18sp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text1"
-        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the , "
+        android:id="@+id/text2"
+        android:text="@string/pengantar"
         android:padding="15dp"
         android:fontFamily="@font/poppinsregular"
         android:textAlignment="center"
         android:layout_marginTop="30dp"
-        android:textSize="12dp"
-        />
+        android:textSize="12sp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:text="@string/login"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppinsbold"
+        android:id="@+id/btn_1_login"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_1_login"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:text="@string/register"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppinsbold"
+        android:id="@+id/btn_2_register"/>
+
 
 
 </RelativeLayout>

@@ -2,5 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="bacground">#EEEEEE</color>
+    <color name="background">#EEEEEE</color>
+    <color name="primaryColor">#50C2C9</color>
+    <color name="secondaryColor">#55BBAF</color>
+    <color name="spanColor">#50C2C9</color>
 </resources>

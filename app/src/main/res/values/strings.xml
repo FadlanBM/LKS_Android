@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">LKS_Android</string>
+    <string name="Pembuka">Get things done with TODo</string>
+    <string name="Pembuka_register">Welcome Onbard!</string>
+    <string name="login">Login</string>
+    <string name="placehoder_pass_confirm">Confirm Password</string>
+    <string name="placeholder_email">Enter Your Email</string>
+    <string name="pembuka_login">Welcome Back!</string>
+    <string name="register">Register</string>
+    <string name="pengantar">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the ,</string>
+    <string name="pengantar_register">Let’s help you meet up your tasks.</string>
 </resources>
