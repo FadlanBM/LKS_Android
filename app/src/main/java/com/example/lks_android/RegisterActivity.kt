@@ -3,6 +3,8 @@ package com.example.lks_android
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -19,6 +21,24 @@ class RegisterActivity : AppCompatActivity() {
         val emailText=findViewById<EditText>(R.id.register_input_email)
         val passwordText=findViewById<EditText>(R.id.register_input_password)
         val confirmPasswordText=findViewById<EditText>(R.id.register_input_confirmPass)
+        val hidePassword=findViewById<ImageView>(R.id.img_show_register)
+        val textHide=findViewById<TextView>(R.id.text_hide_password)
+        passwordText.transformationMethod=PasswordTransformationMethod.getInstance()
+        confirmPasswordText.transformationMethod=PasswordTransformationMethod.getInstance()
+        hidePassword.setOnClickListener{
+
+            if (passwordText.transformationMethod is PasswordTransformationMethod){
+                passwordText.transformationMethod = HideReturnsTransformationMethod.getInstance()
+                confirmPasswordText.transformationMethod=HideReturnsTransformationMethod.getInstance()
+                hidePassword.setImageResource(R.drawable.baseline_remove_red_eye_24)
+                textHide.text="Hide Password"
+            }else{
+                passwordText.transformationMethod=PasswordTransformationMethod.getInstance()
+                confirmPasswordText.transformationMethod=PasswordTransformationMethod.getInstance()
+                hidePassword.setImageResource(R.drawable.closed_eye)
+                textHide.text="Show Passoword"
+            }
+        }
         val registerButton=findViewById<Button>(R.id.btn_register)
 
         database=AppDatabase.getInstance(applicationContext)

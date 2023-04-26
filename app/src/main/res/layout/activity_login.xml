@@ -47,7 +47,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
         android:orientation="vertical"
         android:padding="10dp">
 
@@ -60,23 +59,48 @@
             android:hint="@string/placeholder_email"
             android:paddingLeft="10dp"
             android:paddingTop="5dp" />
+    </LinearLayout>
 
+    <RelativeLayout
+        android:id="@+id/layout_input_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_input_login"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:padding="10dp">
         <EditText
             android:id="@+id/passwordEditText"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="57dp"
-            android:layout_marginTop="20dp"
             android:background="@drawable/text_input_shape"
             android:fontFamily="@font/poppinsregular"
             android:hint="@string/placehoder_pass_confirm"
             android:paddingLeft="10dp"
+            android:paddingRight="40dp"
             android:paddingTop="5dp" />
-    </LinearLayout>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_remove_red_eye_24"
+            android:id="@+id/img_show"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:alpha=".5"
+            />
+
+    </RelativeLayout>
+
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FORGET PASSWORD?"
-        android:layout_below="@+id/layout_input_login"
+        android:layout_below="@+id/layout_input_2"
         android:textColor="@color/secondaryColor"
         android:id="@+id/text_forget_Pass"
         android:layout_centerHorizontal="true"

@@ -47,8 +47,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="20dp"
-                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
                 android:id="@+id/layout_input"
                 android:layout_below="@+id/text_pengantar">
                     <EditText
@@ -64,25 +65,59 @@
                         android:layout_height="57dp"
                         android:hint="@string/placeholder_email"
                         android:paddingLeft="10dp"
-                        android:layout_marginBottom="15dp"
                         android:background="@drawable/text_input_shape"
-                    android:id="@+id/register_input_email"/>
-                <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="57dp"
-                        android:hint="Create Password"
-                        android:paddingLeft="10dp"
-                        android:layout_marginBottom="15dp"
-                        android:background="@drawable/text_input_shape"
-                    android:id="@+id/register_input_password"/>
-                <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="57dp"
-                        android:hint="@string/placehoder_pass_confirm"
-                        android:paddingLeft="10dp"
-                        android:background="@drawable/text_input_shape"
-                        android:id="@+id/register_input_confirmPass"/>
+                        android:id="@+id/register_input_email"/>
+
             </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_input"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/layout_input_3"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Create Password "
+            android:paddingLeft="10dp"
+            android:background="@drawable/text_input_shape"
+            android:id="@+id/register_input_password"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="@string/placehoder_pass_confirm"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/register_input_password"
+            android:background="@drawable/text_input_shape"
+            android:layout_marginTop="10dp"
+            android:id="@+id/register_input_confirmPass"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/closed_eye"
+            android:id="@+id/img_show_register"
+            android:layout_below="@+id/register_input_confirmPass"
+            android:paddingLeft="5dp"
+            android:layout_centerVertical="true"
+            android:alpha=".5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Password"
+            android:layout_below="@+id/register_input_confirmPass"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/text_hide_password"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinssemibold"/>
+
+
+    </RelativeLayout>
 
 
     <Button
@@ -96,7 +131,7 @@
         android:textSize="20sp"
         android:padding="7dp"
         android:textColor="@color/white"
-        android:layout_below="@id/layout_input"
+        android:layout_below="@id/layout_input_3"
         android:fontFamily="@font/poppinsbold"
         android:id="@+id/btn_register"/>
     <LinearLayout
