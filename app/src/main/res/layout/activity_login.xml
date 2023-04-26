@@ -14,6 +14,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/img1"
         android:src="@drawable/componen1"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:layout_margin="20dp"
+        android:id="@+id/row_back_login"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,34 +38,40 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/image_login"
         android:layout_marginTop="30dp"/>
-        <LinearLayout
+
+    <LinearLayout
+        android:id="@+id/layout_input_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_login"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/emailEditText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_below="@+id/image_login"
-            android:padding="10dp"
-            android:id="@+id/layout_input_login"
-            android:layout_margin="20dp"
-            >
-            
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="57dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="5dp"
-                android:hint="@string/placeholder_email"
-                android:fontFamily="@font/poppinsregular"
-                android:background="@drawable/text_input_shape"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="57dp"
-                android:layout_marginTop="20dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="5dp"
-                android:hint="@string/placehoder_pass_confirm"
-                android:fontFamily="@font/poppinsregular"
-                android:background="@drawable/text_input_shape"/>
-        </LinearLayout>
+            android:layout_height="57dp"
+            android:background="@drawable/text_input_shape"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/placeholder_email"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text_input_shape"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/placehoder_pass_confirm"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp" />
+    </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -97,7 +109,8 @@
             android:layout_height="wrap_content"
             android:text="@string/register"
             android:fontFamily="@font/poppinsregular"
-            android:textColor="@color/secondaryColor"/>
+            android:textColor="@color/secondaryColor"
+            android:id="@+id/txt_to_register"/>
 
     </LinearLayout>
 
