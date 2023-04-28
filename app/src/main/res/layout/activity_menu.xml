@@ -5,12 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcame"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:textSize="50sp"/>
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/headershape"
+        android:text="MyPhotos"
+        android:padding="25dp"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsbold"/>
+
+
+         <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="25dp"
+        android:padding="10dp"
+        android:src="@drawable/baseline_add_photo_alternate_24"
+        android:background="@drawable/lingkaranshape"
+         android:id="@+id/btn_add_image"
+             android:visibility="gone"/>
+
+         <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="25dp"
+             android:padding="10dp"
+        android:src="@drawable/baseline_add_24"
+        android:background="@drawable/lingkaranshape"
+             android:id="@+id/btn_show_menu"/>
+         <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="160dp"
+             android:padding="10dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/baseline_library_add_24"
+        android:background="@drawable/lingkaranshape"
+         android:id="@+id/btn_add_album"
+             android:visibility="gone"/>
 
 </RelativeLayout>
