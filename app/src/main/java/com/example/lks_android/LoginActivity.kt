@@ -53,7 +53,9 @@ class LoginActivity : AppCompatActivity() {
                     val intent=Intent(this,MenuActivity::class.java)
                     startActivity(intent)
                 }else{
-                    Toast.makeText(this, "Gagal Login!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Password dan Username salah!", Toast.LENGTH_SHORT).show()
+                    emailText.text=null
+                    passwordText.text=null
                 }
                 }else{
                 Toast.makeText(this,"Email Harus berformat @gmail.com",Toast.LENGTH_SHORT).show()

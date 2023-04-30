@@ -1,5 +1,6 @@
 package com.example.lks_android
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -27,6 +28,10 @@ class MenuActivity : AppCompatActivity() {
                 addAlbum.visibility=View.VISIBLE
                 addImage.visibility=View.VISIBLE
             }
+        }
+        addImage.setOnClickListener{
+            val intent=Intent(this,ModalActivity::class.java)
+            startActivity(intent)
         }
 
     }

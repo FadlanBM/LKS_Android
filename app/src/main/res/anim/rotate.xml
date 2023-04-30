@@ -4,7 +4,7 @@
     android:toDegrees="360"
     android:pivotX="50%"
     android:pivotY="50%"
-    android:repeatCount="1"
+    android:repeatCount="0"
     android:duration="1000"
     android:fillAfter="true">
 </rotate>
